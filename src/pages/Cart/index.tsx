@@ -4,6 +4,7 @@ import {
   MdAddCircleOutline,
   MdRemoveCircleOutline,
 } from 'react-icons/md';
+import Header from '../../components/Header';
 
 import { useCart } from '../../hooks/useCart';
 import { formatPrice } from '../../util/format';
@@ -46,6 +47,8 @@ const Cart = (): JSX.Element => {
   }
 
   return (
+    <>
+    <Header />
     <Container>
       <ProductTable>
         <thead>
@@ -118,6 +121,7 @@ const Cart = (): JSX.Element => {
         </Total>
       </footer>
     </Container>
+    </>
   );
 };
 
